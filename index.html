@@ -14,13 +14,19 @@
 		</script>
 		<script type="text/javascript">
 		<!--
+		
+			var params = {
+				disableContextMenu: true
+			};
+		
 			var config = {
 				width: 960, 
 				height: 600,
 				params: { enableDebugging:"0" }
 				
 			};
-			var u = new UnityObject2(config);
+			var u = new UnityObject2({ params: params });
+			//var u = new UnityObject2(config);
 
 			jQuery(function() {
 
